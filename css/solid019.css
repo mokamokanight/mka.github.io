@@ -1,0 +1,25 @@
+/* ボタン全体のデザイン */
+.button_solid019 {
+    margin: 20px 0;
+    text-align: center; /* ボタンを真ん中に寄せる */
+}
+
+/* ボタンの中のリンクテキストのデザイン */
+.button_solid019 a {
+    display: inline-block;
+    padding: 12px 35px;         /* ボタンの上下左右の余白 */
+    background-color: #9ee5d4;  /* 雫ちゃんカラー（ミントグリーン） */
+    color: #ffffff;             /* 文字の色（白） */
+    font-weight: bold;          /* 文字を太字に */
+    text-decoration: none;      /* 下線を消す */
+    border-radius: 25px;        /* ボタンの角を丸くする */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影をつけて立体的に */
+    transition: all 0.3s ease;  /* マウスを乗せた時のアニメーション */
+}
+
+/* マウスを乗せた（ホバーした）時の動き */
+.button_solid019 a:hover {
+    background-color: #79d2bf;  /* 少し濃いミントグリーンに変化 */
+    transform: translateY(-2px); /* ボタンが少し上に浮き上がる */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* 影を強くする */
+}

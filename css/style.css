@@ -1,12 +1,11 @@
+body {
+  background: linear-gradient(to bottom right, #d6f3ff, #ffe0f5);
+  font-family: sans-serif;
+  text-align: center;      
+  padding: 30px;
+}
 
-    body {
-      background: linear-gradient(to bottom right, #d6f3ff, #ffe0f5);
-      font-family: sans-serif;
-      text-align: center;
-      padding: 40px;
-    }
-
-   .card {
+.card {
   background: white;
   max-width: 500px;
   width: 90%;
@@ -16,54 +15,71 @@
   box-shadow: 0 0 20px rgba(100, 180, 255, 0.4);
 }
 
-    h1 {
-      color: #6bbcff;
-      font-size: 45px;
-    }
+h1 {
+  color: #6bbcff;
+  font-size: 45px;
+}
 
-    h2 {
-      color: #ff8ecf;
-    }
+h2 {
+  color: #ff8ecf;
+  margin-top: 0; /* 💡 帯の上の余白をスッキリさせる */
+}
 
-    p {
-      font-size: 18px;
-      line-height: 1.8;
-    }
+p {
+  font-size: 18px;
+  line-height: 1.8;
+}
 
-    .shizuku-img {
-      width: 220px;
-      border-radius: 20px;
-      border: 5px solid #aee6ff;
-      box-shadow: 0 0 20px #bdefff;
-      margin-bottom: 20px;
-    }
+.shizuku-img {
+  width: 220px;
+  border-radius: 20px;
+  border: 5px solid #aee6ff;
+  box-shadow: 0 0 20px #bdefff;
+  margin-bottom: 20px;
+}
 
-    .favorite {
-      background: #f4fbff;
-      padding: 15px;
-      border-radius: 15px;
-      margin-top: 20px;
-    }
+/* ✍️ 「好きなところ」の帯を修正 */
+.favorite {
+  background: #8dc1e0;
+  max-width: 320px;     /* 💡 帯が長すぎないように最大幅を制限 */
+  width: 100%;          /* スマホ画面では自動で縮むように設定 */
+  padding: 15px 25px;
+  margin: 20px auto 0;  /* 💡 「auto」でカードの真ん中に配置 */
+  box-sizing: border-box; /* 💡 はみ出し防止の魔法のコード */
+  border-radius: 15px;  /* 重複していたので15pxに統一 */
+  text-align: left;     /* 💡 中の箇条書きの文字を左揃えにして読みやすく */
+}
 
-    .music {
-      background: #fff0f8;
-      padding: 15px;
-      border-radius: 15px;
-      margin-top: 20px;
-    }
+/* ✍️ 「おすすめ楽曲（？）」の帯も同じように修正 */
+.music {
+  background: #3cc0ba;
+  max-width: 320px;     /* 💡 帯が長すぎないように最大幅を制限 */
+  width: 100%;          /* スマホ画面では自動で縮むように設定 */
+  padding: 15px 25px;
+  margin: 20px auto 0;  /* 💡 「auto」でカードの真ん中に配置 */
+  box-sizing: border-box; /* 💡 はみ出し防止の魔法のコード */
+  border-radius: 15px;  /* 重複していたので15pxに統一 */
+  text-align: left;     /* 💡 中の文字を左揃えに */
+}
 
-    a {
-      text-decoration: none;
-      color: white;
-      background: #6bbcff;
-      padding: 12px 25px;
-      border-radius: 15px;
-      display: inline-block;
-      margin-top: 25px;
-      transition: 0.3s;
-    }
+/* 💡 帯の中の文字色（黒だと見づらいため白に変更） */
+.favorite, .favorite p, .favorite h2,
+.music, .music p, .music h2 {
+  color: white;
+}
 
-    a:hover {
-      background: #8cd0ff;
-      transform: scale(1.05);
-    }
+a {
+  text-decoration: none;
+  color: white;
+  background: #6bbcff;
+  padding: 12px 25px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #8cd0ff;
+  transform: scale(1.05);
+}
